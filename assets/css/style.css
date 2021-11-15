@@ -570,7 +570,7 @@ html {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     margin: 0;
     padding: 0;
     font-size: 15px;
@@ -1535,7 +1535,7 @@ table img {
 }
 
 .navbar .menu-item a {
-    font-family: font-family: 'Cormorant Garamond', serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: 20px;
     position: relative;
     display: -webkit-box;
@@ -2514,7 +2514,7 @@ table img {
 }
 
 .banner .title {
-    font-family: font-family: 'Cormorant Garamond', serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: 62px;
     font-weight: 200;
     line-height: 80px;
