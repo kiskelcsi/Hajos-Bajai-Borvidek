@@ -514,6 +514,7 @@ u,
 ul,
 var,
 video {
+    font-family: "Cormorant Garamond", serif;
     margin: 0;
     padding: 0;
     border: 0;
@@ -570,7 +571,7 @@ html {
 }
 
 body {
-    font-family: "Catamaran", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     margin: 0;
     padding: 0;
     font-size: 15px;
@@ -712,7 +713,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 20px;
-    font-family: "Catamaran", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     font-weight: 700;
     line-height: 28px;
     color: #1d2228;
@@ -747,7 +748,7 @@ h6 {
 }
 
 p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 28px;
     margin-bottom: 15px;
     color: #515151;
@@ -842,12 +843,12 @@ blockquote {
     margin: 20px 0;
     border-left: 3px solid #48132a;
     font-size: 18px;
-    font-family: "Catamaran", sans-serif;
+    font-family: "Cormorant Garamond", serif;
 }
 
 blockquote p {
     margin-bottom: 0;
-    font-family: "Catamaran", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: 18px;
 }
 
@@ -917,7 +918,7 @@ blockquote p {
 .section-title-wrap p {
     max-width: 600px;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .section-title-wrap.text-center p {
@@ -989,7 +990,7 @@ textarea {
     border-color: #e5e1dc;
     background-color: #fff;
     letter-spacing: 0.1px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .form-control:focus {
@@ -1077,7 +1078,7 @@ textarea {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #a63b43;
+    background-color: #412000;
     position: absolute;
     top: 0;
     left: 0;
@@ -1108,19 +1109,19 @@ textarea {
 }
 
 .btn-custom.primary {
-    background-color: #48132a;
-    -webkit-box-shadow: 4px 3px 24px rgba(133, 183, 44, 0.5);
-    box-shadow: 4px 3px 24px rgb(72 19 42);
+    background-color: #964b00;
+    -webkit-box-shadow: 4px 3px 24px #412000;
+    box-shadow: 4px 3px 24px #412000;
 }
 
 .btn-custom.secondary {
-    background-color: #a63b43;
-    -webkit-box-shadow: 0 3px 24px rgba(255, 103, 103, 0.5);
-    box-shadow: 0 3px 24px rgb(166 59 67);
+    background-color: #964b00;
+    -webkit-box-shadow: 0 3px 24px #412000;
+    box-shadow: 0 3px 24px #412000;
 }
 
 .btn-custom.secondary::before {
-    background-color: #792d4e;
+    background-color: #964b00;
 }
 
 .input-group-append .btn-custom,
@@ -1380,7 +1381,7 @@ table th {
     font-weight: 600;
     color: #fff;
     background-color: #1d2228;
-    font-family: "Catamaran", sans-serif;
+    font-family: "Cormorant Garamond", serif;
 }
 
 table {
@@ -1451,6 +1452,13 @@ table img {
 
 .main-header.can-sticky {
     position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.main-header.cannot-sticky {
+    position: absolute;
+    background-color: transparent;
     top: 0;
     left: 0;
 }
@@ -1805,7 +1813,7 @@ table img {
     font-weight: 700;
     font-size: 15px;
     margin-bottom: 5px;
-    font-family: "Catamaran", sans-serif;
+    font-family: "Cormorant Garamond", serif;
 }
 
 .cart-item-body a:hover {
@@ -2265,6 +2273,7 @@ table img {
     -webkit-transform: translateX(-15px);
     -ms-transform: translateX(-15px);
     transform: translateX(-15px);
+    font-size: 18px;
 }
 
 .footer-widget ul li a::before {
@@ -2721,6 +2730,10 @@ table img {
     padding: 280px 0 140px;
 }
 
+.cannot-sticky+.subheader {
+    padding: 280px 0 140px;
+}
+
 .subheader {
     padding: 140px 0;
 }
@@ -2737,8 +2750,9 @@ table img {
 
 .subheader h1 {
     color: #fff;
-    font-family: "Catamaran", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     text-align: center;
+    font-weight: 400;
 }
 
 .subheader h5 {
@@ -3850,7 +3864,7 @@ table img {
 
 .reply-link {
     color: #1d2228;
-    font-family: "Catamaran", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     font-weight: 600;
 }
 
@@ -4062,7 +4076,7 @@ table img {
 }
 
 .ct-testimonial-item span {
-    font-family: "Catamaran", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     font-weight: 700;
     color: #1d2228;
     font-size: 17px;
@@ -4663,7 +4677,7 @@ table img {
 }
 
 .tooltip {
-    font-family: "Poppins", sans-serif;
+    font-family: "Cormorant Garamond", serif;
 }
 
 .media {
@@ -4951,7 +4965,7 @@ table img {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    font-family: "Catamaran", sans-serif;
+    font-family: "Cormorant Garamond", serif;
     margin: 0 0 20px;
 }
 
@@ -5896,64 +5910,4 @@ td.quantity {
 
 footer.ct-footer.footer-3 {
     background-color: #f7f4ee;
-}
-
-body {
-    color: #333;
-    font-family: Lato;
-    font-weight: 300;
-    text-align: center;
-    background: #333;
-}
-
-.container>.btn {
-    margin: 60px;
-    padding: 20px 40px;
-    font-size: 30px;
-    border-radius: 40px;
-}
-
-.modal {
-    background: #fff;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
-    top: 100%;
-    position: fixed;
-    left: 0;
-    text-align: left;
-}
-
-.modal .header {
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-    font: 300 24px Lato;
-    position: relative;
-}
-
-.modal .body {
-    padding: 20px;
-    font: 300 16px Lato;
-}
-
-.btn {
-    background: linear-gradient(to right, rgb(220, 227, 91), rgb(69, 182, 73));
-    padding: 10px 25px;
-    display: inline-block;
-    border-radius: 25px;
-    margin: 20px 0;
-    color: #fff;
-    position: relative;
-    transition: all 0.4s ease;
-    cursor: pointer;
-}
-
-.btn:hover {
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-}
-
-.container.modal-open .modal {
-    top: 0;
 }
