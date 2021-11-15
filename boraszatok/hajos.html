@@ -8,32 +8,32 @@
     <title>Hajós-Bajai Borvidék</title>
 
     <!-- Vendor Stylesheets -->
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/animate.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
-    <link rel="stylesheet" href="assets/css/plugins/slick.css" />
-    <link rel="stylesheet" href="assets/css/plugins/slick-theme.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/animate.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/magnific-popup.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/slick.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/slick-theme.css" />
     <!-- Icon Fonts -->
-    <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css" />
-    <link rel="stylesheet" href="assets/fonts/flaticon-2/flaticon.css" />
-    <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/fonts/flaticon/flaticon.css" />
+    <link rel="stylesheet" href="../assets/fonts/flaticon-2/flaticon.css" />
+    <link rel="stylesheet" href="../assets/fonts/font-awesome/css/all.min.css" />
 
     <!-- Lostis Style sheet -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <!-- Favicon -->
 </head>
 
 <body>
     <!-- Preloader start -->
     <div class="ct-preloader">
-        <img src="assets/img/preloader.svg" alt="preloader" />
+        <img src="../assets/img/preloader.svg" alt="preloader" />
     </div>
     <!-- Preloader End -->
 
     <!-- Aside (Mobile Navigation) -->
     <aside class="main-aside">
         <a class="navbar-brand" href="index.html">
-            <img src="assets/images/cropped-cropped-logo_eredeti1.png" alt="logo" />
+            <img src="../assets/images/cropped-cropped-logo_eredeti1.png" alt="logo" />
         </a>
 
         <div class="aside-scroll">
@@ -44,6 +44,7 @@
                 <li class="menu-item">
                     <a href="#">Hagyományok</a>
                 </li>
+
                 <li class="menu-item">
                     <a href="#">Borvidék</a>
                 </li>
@@ -122,7 +123,7 @@
             <div class="menu-top">
                 <!-- Logo -->
                 <!-- <a class="navbar-brand top-menu_brand" href="index.html">
-                    <img src="assets/images/cropped-cropped-logo_eredeti1.png" alt="logo" />
+                    <img src="../assets/images/cropped-cropped-logo_eredeti1.png" alt="logo" />
                 </a> -->
                 <!-- Menu -->
                 <ul class="navbar-nav">
@@ -215,103 +216,64 @@
     </header>
     <!-- Header End -->
     <!-- Subheader Start -->
-    <div class="subheader bg-cover dark-overlay" style="background-image: url('assets/img/subheader.jpg')">
+    <div class="subheader bg-center_boraszat dark-overlay" style="
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4e/Haj%C3%B3s-Pincefalu_2021_07.jpg');
+      ">
         <div class="container">
             <div class="subheader-inner">
-                <h1>Kapcsolat</h1>
-                <!-- <p class="star-line">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </p> -->
+                <h1>Hajósi Hegyközség</h1>
             </div>
         </div>
     </div>
     <!-- Subheader End -->
-    <!-- Contact Info Start -->
-    <!-- <div class="section section-padding">
+    <section class="section section-padding posts">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="ct-info-box">
-                        <div class="ct-info-box-icon">
-                            <i class="flaticon-call"></i>
-                            <h5>Call Me</h5>
-                            <span>+438 329 122</span>
+            <div class="row masonry">
+                <h2 class="title col-12">Hajósi Hegyközség Borászatai</h2>
+                <div class="col-lg-6 col-md-6 masonry-item cards">
+                    <article class="post sigma_featured-product">
+                        <div class="post-thumbnail card" data-description="0">
+                            <a href="#"><img src="https://huberpince.hu/image/muhely_01.jpg" alt="img1" /></a>
+                            <div class="post-meta">
+                                <h2>Huber Pince</h2>
+                                <button class="btn-custom primary">Tovább →</button>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="ct-info-box">
-                        <div class="ct-info-box-icon">
-                            <i class="flaticon-email"></i>
-                            <h5>Mail Me</h5>
-                            <span>joe@example.com</span>
+                <div class="col-lg-6 col-md-6 masonry-item cards">
+                    <article class="post sigma_featured-product">
+                        <div class="post-thumbnail card" data-description="1">
+                            <a href="#"><img src="https://oszvaldpincehajos.hu/wp-content/uploads/2020/05/sillerhordo.jpg" alt="blog post" /></a>
+                            <div class="post-meta">
+                                <h2>Oszvald Pince</h2>
+                                <button class="btn-custom primary">Tovább→</button>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="ct-info-box">
-                        <div class="ct-info-box-icon">
-                            <i class="flaticon-location"></i>
-                            <h5>Find Me</h5>
-                            <span>445 Mount Eden Road, Mount Eden, Auckland.</span>
+                <div class="col-lg-6 col-md-6 masonry-item cards">
+                    <article class="post sigma_featured-product">
+                        <div class="post-thumbnail card" data-description="2">
+                            <a href="#"><img src="https://umenhofferpince.hu/image/umenhoffer-2.png" alt="blog post" /></a>
+                            <div class="post-meta">
+                                <h2>Umenhoffer Pince</h2>
+                                <button class="btn-custom primary">Tovább →</button>
+                            </div>
                         </div>
+                    </article>
+                </div>
+
+                <div id="modal_winery" class="modal_outer">
+                    <div class="modal_inner">
+                        <p></p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div> -->
-    <!-- Contact Info End -->
-    <!--Contact Form Start -->
-    <section class="section pt-20">
-        <div class="container">
-            <div class="section-title-wrap section-header">
-                <h2 class="title">Küldj nekünk üzenetet</h2>
-                <p class="subtitle">
-                    Ha kérdésed van, küldj nekünk üzenetet, legyen szó bármiről.
-                </p>
-            </div>
-            <form class="mf_form_validate ajax_submit" action="sendmail.php" method="post" enctype="multipart/form-data">
-                <div class="row">
-                    <div class="form-group col-lg-6">
-                        <input type="text" placeholder="Neved" class="form-control" name="name" value="" />
-                    </div>
-                    <div class="form-group col-lg-6">
-                        <input type="text" placeholder="Telefonszámod" class="form-control" name="phone" value="" />
-                    </div>
-                    <div class="form-group col-lg-12">
-                        <input type="email" placeholder="E-mail címed" class="form-control" name="email" value="" />
-                    </div>
-                    <div class="form-group col-lg-12">
-                        <input type="text" placeholder="Tárgy" class="form-control" name="subject" value="" />
-                    </div>
-                    <div class="form-group col-lg-12">
-                        <textarea name="message" class="form-control" placeholder="Üzeneted" rows="8"></textarea>
-                    </div>
-                </div>
-                <button type="submit" class="btn-custom primary">Küldés</button>
-                <div class="server_response w-100"></div>
-            </form>
         </div>
     </section>
-    <!--Contact Form End -->
-    <!-- Newsletter start -->
-    <!-- <section class="section light-bg bg-cover" style="background-image:url('assets/img/bg/1.jpg')">
-        <div class="container">
-            <div class="section-title-wrap section-header text-center">
-                <h2 class="title">Subscribe to My Newsletter</h2>
-                <p class="subtitle">
-                    Get access to my latest recipes by joining the weekly newsletter
-                </p>
-            </div>
-            <form class="ct-newsletter" method="post">
-                <input type="email" class="form-control" placeholder="Enter your email address" value="">
-                <button type="submit" class="btn-custom primary" name="button"> Submit <i class="far fa-paper-plane"></i> </button>
-            </form>
-        </div>
-    </section> -->
-    <!-- Newsletter End -->
+
+    <!-- winerys -->
 
     <!-- Footer Start -->
     <footer class="ct-footer footer-3">
@@ -339,7 +301,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 text-center footer-widget">
                     <div class="footer-logo mx-auto d-block">
-                        <img src="assets/images/cropped-cropped-logo_eredeti1.png" alt="cookiteer" />
+                        <img src="../assets/images/cropped-cropped-logo_eredeti1.png" alt="cookiteer" />
                     </div>
                     <p>
                         A Hajós-Bajai Borvidék az alföldi régió délnyugati részén 15 települést foglal magában. A kiváló talaj és a sík terület miatt a hirtelen lehulló nagyobb mennyiségű csapadék sem folyik el a területről, így a vízigényesebb, kiváló minőséget adó fehér borszőlő
@@ -375,20 +337,20 @@
     <!-- Footer End -->
 
     <!-- Vendor Scripts -->
-    <script src="assets/js/plugins/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/plugins/popper.min.js"></script>
-    <script src="assets/js/plugins/waypoint.js"></script>
-    <script src="assets/js/plugins/bootstrap.min.js"></script>
-    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/plugins/jquery.slimScroll.min.js"></script>
-    <script src="assets/js/plugins/imagesloaded.min.js"></script>
-    <script src="assets/js/plugins/jquery.steps.min.js"></script>
-    <script src="assets/js/plugins/jquery.countdown.min.js"></script>
-    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
-    <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="../assets/js/plugins/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/plugins/popper.min.js"></script>
+    <script src="../assets/js/plugins/waypoint.js"></script>
+    <script src="../assets/js/plugins/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="../assets/js/plugins/jquery.slimScroll.min.js"></script>
+    <script src="../assets/js/plugins/imagesloaded.min.js"></script>
+    <script src="../assets/js/plugins/jquery.steps.min.js"></script>
+    <script src="../assets/js/plugins/jquery.countdown.min.js"></script>
+    <script src="../assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/plugins/slick.min.js"></script>
 
     <!-- Lostis Scripts -->
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

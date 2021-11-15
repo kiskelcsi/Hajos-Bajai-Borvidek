@@ -281,9 +281,9 @@
   });
 
   //On scroll events
-  $(window).on("scroll", function () {
-    doSticky();
-  });
+  //   $(window).on("scroll", function () {
+  //     doSticky();
+  //   });
 
   //On resize events
   $(window).on("resize", function () {
@@ -291,4 +291,77 @@
   });
 })(jQuery);
 
+// Winerys//
+
+const hajos = [
+  {
+    winery: "Huber Pince",
+    email: "huberpince@gmail.com",
+    str: "..talán a legjobb válasz erre, hogy bort készítünk... ...magunknak, mert nagyon szeretjük. Viszont, ha már itt vagy, te is igyál belőle! Sőt! Vigyél belőle haza is! Éhes vagy? Gyere, együnk valami finomat... ...ehhez imádom a Kékfrankost. Emlékszel, amikor gyerekkorodban beleharaptál egy hatalmas kiflibe, aztán ráittad a kakaót, és mennyire összeillettek az ízek? Hmm. Na, ez pont ilyen érzés, csak már felnőtt vagyok... ...azt hiszem, hogy ez nagyon jó dolog. Ezért is készítek bort. Azért, mert azt hiszem, hogy eddig minden jó dolog mellett, ami velem történt, ott volt a bor.",
+    page: "https://huberpince.hu/",
+  },
+  {
+    winery: "Oszvald Pince",
+    email: "huberpince@gmail.com",
+    str: "1860-ban szorgos sváb őseink alapították meg az Oszvald pincét a Hajósi pincefalu egyik leghangulatosabb terén, amelyet családi vállalkozásban 2009-ben nyitottunk meg ismét a borkedvelő közönség előtt. Célunk, hogy a szívvel-lélekkel gondozott területeinkről származó, kézi szüretelésű termésből készült hajósi borainkat minél többen megkóstolhassák ebben a különleges környezetben.",
+    page: "https://oszvaldpincehajos.hu/",
+  },
+  {
+    winery: "Umenhoffer Pince",
+    email: "huberpince@gmail.com",
+    str: "Egy hangulatos kis pince, a Hajósi – Pincefalu szívében, ahol mindig finom borokkal várjuk az ide látógató vendégeinket. Ha hajósi borokat kóstolnál, vagy csak kíváncsi vagy milyen egy igazi borospince hangulata, térj be hozzánk és nem fogod megbánni!",
+    page: "https://oszvaldpincehajos.hu/",
+  },
+];
+
 //open modal//
+const cardButton = document.querySelectorAll(".card button");
+const cardImage = document.querySelectorAll(".card");
+const outerModal = document.querySelector(".modal_outer");
+const innerModal = document.querySelector(".modal_inner");
+
+function handleButtonClicked(event) {
+  const button = event.currentTarget;
+  const card = button.closest(".card");
+  const imgSrc = card.querySelector("img").src;
+  const heading = card.querySelector("h2").textContent;
+  const description = card.dataset.description;
+  //console.log(heading)
+  innerModal.innerHTML = `
+  <img width="400" height="400" src='${imgSrc.replace(
+    "200",
+    "600"
+  )}' alt='${description}' />
+  <h2 class="ptittlemargin">${hajos[description].winery}</h2>
+  <p class="pbuttonbottom" >${hajos[description].str}</p>
+  <a href="${hajos[description].page}"  class="btn-custom primary">${
+    hajos[description].winery
+  }</a>
+  <a href="javascript:void(0);" class="btn-custom primary goBackModal" onclick="closeModalButton()" >Vissza</a>
+
+
+`;
+  //console.log(card.dataset.description);
+
+  //console.log(imgSrc);
+  outerModal.classList.add("open");
+}
+
+function closeModal(e) {
+  const clickOutside = e.target.closest(".modal_inner");
+  if (!clickOutside) {
+    outerModal.classList.remove("open");
+  }
+}
+function closeModalButton() {
+  let element = document.getElementById("modal_winery");
+  element.classList.remove("open");
+}
+
+cardButton.forEach((button) =>
+  button.addEventListener("click", handleButtonClicked)
+);
+cardImage.forEach((button) =>
+  button.addEventListener("click", handleButtonClicked)
+);
+// outerModal.addEventListener("click", closeModal);
