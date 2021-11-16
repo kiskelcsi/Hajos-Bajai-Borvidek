@@ -46,6 +46,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400;1,500;1,700&family=Pompiere&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400;1,500;1,700&family=Pompiere&family=Raleway:wght@100;200;300;400;500&display=swap");
 
 /*-------------------------------------------------------------------*/
 
@@ -514,7 +515,7 @@ u,
 ul,
 var,
 video {
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Raleway", sans-serif;
     margin: 0;
     padding: 0;
     border: 0;
@@ -571,7 +572,7 @@ html {
 }
 
 body {
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Raleway", sans-serif;
     margin: 0;
     padding: 0;
     font-size: 15px;
@@ -719,7 +720,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 20px;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     line-height: 28px;
     color: #1d2228;
@@ -754,6 +755,8 @@ h6 {
 }
 
 p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 15px;
@@ -849,12 +852,12 @@ blockquote {
     margin: 20px 0;
     border-left: 3px solid #48132a;
     font-size: 18px;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Raleway", sans-serif;
 }
 
 blockquote p {
     margin-bottom: 0;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Raleway", sans-serif;
     font-size: 18px;
 }
 
@@ -1388,7 +1391,7 @@ table th {
     font-weight: 600;
     color: #fff;
     background-color: #1d2228;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Raleway", sans-serif;
 }
 
 table {
@@ -1550,8 +1553,8 @@ table img {
 }
 
 .navbar .menu-item a {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-size: 17px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1637,8 +1640,8 @@ table img {
 .navbar .menu-item .submenu .menu-item a {
     padding: 10px 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 300;
+    font-size: 15px;
 }
 
 .navbar .menu-item .submenu .menu-item a::before {
@@ -1648,7 +1651,7 @@ table img {
 .navbar .menu-item .submenu .menu-item a:hover {
     color: #fff;
     background-color: #fafafa3b;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .navbar .menu-item>.submenu>.menu-item:last-child>a {
@@ -1820,7 +1823,7 @@ table img {
     font-weight: 700;
     font-size: 15px;
     margin-bottom: 5px;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .cart-item-body a:hover {
@@ -2281,6 +2284,7 @@ table img {
     -ms-transform: translateX(-15px);
     transform: translateX(-15px);
     font-size: 18px;
+    font-weight: 200;
 }
 
 .footer-widget ul li a::before {
@@ -2526,13 +2530,13 @@ table img {
 }
 
 .banner_cont {
-    margin-left: 10% !important;
+    margin-left: 5% !important;
 }
 
 .banner .title {
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Raleway", sans-serif;
     font-size: 62px;
-    font-weight: 200;
+    font-weight: 100;
     line-height: 80px;
     /* font-family: "Catamaran", sans-serif; */
     margin-bottom: 20px;
@@ -2756,7 +2760,7 @@ table img {
 
 .subheader h1 {
     color: #fff;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Raleway", sans-serif;
     text-align: center;
     font-weight: 400;
 }
@@ -3870,7 +3874,7 @@ table img {
 
 .reply-link {
     color: #1d2228;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 600;
 }
 
@@ -4082,7 +4086,7 @@ table img {
 }
 
 .ct-testimonial-item span {
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     color: #1d2228;
     font-size: 17px;
@@ -4683,7 +4687,7 @@ table img {
 }
 
 .tooltip {
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .media {
@@ -4971,7 +4975,7 @@ table img {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Raleway", sans-serif;
     margin: 0 0 20px;
 }
 
@@ -5980,4 +5984,95 @@ footer.ct-footer.footer-3 {
     float: right;
     width: 170px;
     height: 42px;
+}
+
+
+/* switch language */
+
+.lng-select {
+    position: absolute;
+    list-style: none;
+    display: block;
+    width: 80px;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    top: 35px;
+    left: 0;
+}
+
+.lng-select ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.lng-select li {
+    display: block;
+}
+
+.lng-select div,
+.lng-select a {
+    display: inline-block;
+    padding: 0px 20px;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.lng-select img {
+    width: 60px;
+    height: 15px;
+}
+
+.lng-select a:focus,
+.lng-select a:hover {
+    background: #0000005b;
+    color: #fff;
+}
+
+.lng-select div {
+    background: none;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    font-weight: 300;
+}
+
+.lng-select div:after {
+    content: "";
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    margin-top: -3px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="6px"><path fill-rule="evenodd"  fill="rgb(255,255,255)" d="M8.997,1.059 L5.463,4.938 L5.464,4.938 L4.500,5.996 L3.536,4.938 L3.536,4.938 L0.003,1.059 L0.967,0.001 L4.500,3.880 L8.033,0.001 L8.997,1.059 Z"/></svg>');
+    width: 9px;
+    height: 6px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.lng-select.open div:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
