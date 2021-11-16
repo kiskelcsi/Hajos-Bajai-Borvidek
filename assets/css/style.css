@@ -577,7 +577,7 @@ body {
     padding: 0;
     font-size: 15px;
     line-height: 28px;
-    font-weight: 400;
+    font-weight: 300;
     color: #515151;
     overflow-x: hidden;
 }
@@ -1460,6 +1460,10 @@ table img {
     padding: 0;
 }
 
+.contact_menu {
+    background-color: rgba(0, 0, 0, 0.226);
+}
+
 .main-header.can-sticky {
     position: fixed;
     top: 0;
@@ -1522,7 +1526,7 @@ table img {
     display: flex;
     justify-content: right !important;
     width: 100vw;
-    margin-left: 5%;
+    margin-left: 1%;
     margin-right: 40px;
 }
 
@@ -2744,6 +2748,11 @@ table img {
     padding: 280px 0 140px;
 }
 
+.cannot-sticky+.subheader_contact {
+    padding: 160px 0 0;
+    color: #29313a;
+}
+
 .subheader {
     padding: 140px 0;
 }
@@ -2758,8 +2767,21 @@ table img {
     text-align: center;
 }
 
+.subheader .subheader-inner_contact {
+    padding-bottom: 40px;
+    border-bottom: 4px double #1d2228;
+    text-align: center;
+}
+
 .subheader h1 {
     color: #fff;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+.subheader_contact h1 {
+    color: #1d2228;
     font-family: "Raleway", sans-serif;
     text-align: center;
     font-weight: 400;
@@ -5986,19 +6008,36 @@ footer.ct-footer.footer-3 {
     height: 42px;
 }
 
+.falogo {
+    position: relative;
+    list-style: none;
+    display: flex;
+    width: 80px;
+    text-align: right;
+    padding: 30px 10px;
+    margin-right: auto;
+    justify-content: flex-start;
+}
+
+.falogo a {
+    color: #fff !important;
+}
+
+.falogo a:hover {
+    color: #48132a !important;
+}
+
 
 /* switch language */
 
 .lng-select {
-    position: absolute;
+    position: relative;
     list-style: none;
-    display: block;
+    display: flex;
     width: 80px;
     text-align: right;
     padding: 0;
-    margin: 0;
-    top: 35px;
-    left: 0;
+    justify-content: flex-start;
 }
 
 .lng-select ul {
@@ -6041,11 +6080,17 @@ footer.ct-footer.footer-3 {
 }
 
 .lng-select div {
+    padding-top: 30px;
     background: none;
     display: block;
     cursor: pointer;
     position: relative;
     font-weight: 300;
+}
+
+.lng-select div:hover {
+    font-weight: 600;
+    color: #48132a !important;
 }
 
 .lng-select div:after {
