@@ -6153,3 +6153,15 @@ h1.title {
     line-height: 30px;
     letter-spacing: 0.8px;
 }
+
+.pright_region {
+    padding-right: 100px;
+}
+
+.pleft_region {
+    padding-left: 100px;
+}
+
+.strong_text {
+    font-size: 25px;
+}
