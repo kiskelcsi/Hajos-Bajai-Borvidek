@@ -706,6 +706,7 @@ img {
     background-position: center;
     background-size: cover;
     max-width: 100vw;
+    height: 20vh;
 }
 
 
@@ -2753,7 +2754,7 @@ table img {
 }
 
 .cannot-sticky+.subheader {
-    padding: 280px 0 140px;
+    padding: 140px 0 200px;
 }
 
 .cannot-sticky+.subheader_contact {
