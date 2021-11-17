@@ -307,18 +307,34 @@ for (var i = 0; i < cards.length; i++) {
 const hajos = [
   {
     winery: "Huber Pince",
+    image2: "image/huber/huber2.jpg",
+    image3: "image/huber/huber3.jpg",
+    image4: "image/huber/huber4.jpg",
+    adresse: "6344, Hajós <br> Csárda sor 7.",
+    telefon: "+36/30-548-3904",
     email: "huberpince@gmail.com",
+
     str: "..talán a legjobb válasz erre, hogy bort készítünk... ...magunknak, mert nagyon szeretjük. Viszont, ha már itt vagy, te is igyál belőle! Sőt! Vigyél belőle haza is! Éhes vagy? Gyere, együnk valami finomat... ...ehhez imádom a Kékfrankost. Emlékszel, amikor gyerekkorodban beleharaptál egy hatalmas kiflibe, aztán ráittad a kakaót, és mennyire összeillettek az ízek? Hmm. Na, ez pont ilyen érzés, csak már felnőtt vagyok... ...azt hiszem, hogy ez nagyon jó dolog. Ezért is készítek bort. Azért, mert azt hiszem, hogy eddig minden jó dolog mellett, ami velem történt, ott volt a bor.",
     page: "https://huberpince.hu/",
   },
   {
     winery: "Oszvald Pince",
+    image2: "image/huber/huber2.jpg",
+    image3: "image/huber/huber3.jpg",
+    image4: "image/huber/huber4.jpg",
+    adresse: "6344, Hajós <br> Csárda sor 7.",
+    telefon: "+36/30-548-3904",
     email: "huberpince@gmail.com",
     str: "1860-ban szorgos sváb őseink alapították meg az Oszvald pincét a Hajósi pincefalu egyik leghangulatosabb terén, amelyet családi vállalkozásban 2009-ben nyitottunk meg ismét a borkedvelő közönség előtt. Célunk, hogy a szívvel-lélekkel gondozott területeinkről származó, kézi szüretelésű termésből készült hajósi borainkat minél többen megkóstolhassák ebben a különleges környezetben.",
     page: "https://oszvaldpincehajos.hu/",
   },
   {
     winery: "Umenhoffer Pince",
+    image2: "image/huber/huber2.jpg",
+    image3: "image/huber/huber3.jpg",
+    image4: "image/huber/huber4.jpg",
+    adresse: "6344, Hajós <br> Csárda sor 7.",
+    telefon: "+36/30-548-3904",
     email: "huberpince@gmail.com",
     str: "Egy hangulatos kis pince, a Hajósi – Pincefalu szívében, ahol mindig finom borokkal várjuk az ide látógató vendégeinket. Ha hajósi borokat kóstolnál, vagy csak kíváncsi vagy milyen egy igazi borospince hangulata, térj be hozzánk és nem fogod megbánni!",
     page: "https://oszvaldpincehajos.hu/",
@@ -338,18 +354,43 @@ function handleButtonClicked(event) {
   const heading = card.querySelector("h2").textContent;
   const description = card.dataset.description;
   //console.log(heading)
-  innerModal.innerHTML = `
-  <img width="400" height="400" src='${imgSrc.replace(
-    "200",
-    "600"
-  )}' alt='${description}' />
-  <h2 class="ptittlemargin">${hajos[description].winery}</h2>
-  <p class="pbuttonbottom" >${hajos[description].str}</p>
-  <a href="${hajos[description].page}"  class="btn-custom primary">${
-    hajos[description].winery
-  }</a>
-  <a href="javascript:void(0);" class="btn-custom primary goBackModal" onclick="closeModalButton()" >Vissza</a>
-
+  innerModal.innerHTML = `<div class="container" >
+  <div class="row" >
+  <div class="col-12" ><h2>${hajos[description].winery}</h2></div>
+  <div class="col-12 col-md-6 d-flex justify-content-center">
+  
+  <img class=" modal_pictures"  src='${imgSrc.replace()}' alt='${description}' />
+  </div>
+  <div class="col-12 col-md-6 d-flex justify-content-center">  <img class=" modal_pictures"  src='${
+    hajos[description].image2
+  }' alt='${description}' />
+</div>
+  <div class="col-12 col-md-6 d-flex justify-content-center">  <img class=" modal_pictures" src='${
+    hajos[description].image3
+  }' alt='${description}' />
+</div>
+  <div class="col-12 col-md-6 d-flex justify-content-center">  <img class=" modal_pictures" src='${
+    hajos[description].image4
+  }' alt='${description}' />
+</div>
+ 
+  <p class="col-12 col-md-6 pbuttonbottom " >${hajos[description].str}</p>
+  <div class=" col-12 col-md-6 ptittlemargin">
+  <h5>Elérhetőségek:</h5>
+  <p>Cím: <br> ${hajos[description].adresse} </p>
+  <a href="tel:${hajos[description].telefon}">${
+    hajos[description].telefon
+  }</a><br>
+  <a href="mailto:${hajos[description].email}">${hajos[description].email}</a>
+  </div>
+  <div class="col-12 row" >
+  <div class="col-12 col-md-6 justify-content-center d-flex" ><a class=" btn-custom primary justify-content-center" href="${
+    hajos[description].page
+  }">${hajos[description].winery}</a></div>
+  <div class="col-12 col-md-6 justify-content-center d-flex" ><a class=" btn-custom primary goBackModal justify-content-center" href="javascript:void(0);"  onclick="closeModalButton()" >Vissza</a></div>
+  </div>
+  </div>
+  </div>
 
 `;
   //console.log(card.dataset.description);
