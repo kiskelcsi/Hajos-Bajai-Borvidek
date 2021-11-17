@@ -917,7 +917,8 @@ blockquote p {
 
 .title {
     font-size: 42px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+    padding-left: 0 !important;
 }
 
 .section-title-wrap.section-header {
@@ -1504,7 +1505,7 @@ table img {
     width: 24px;
     height: 2px;
     border-radius: 3px;
-    background-color: #1d2228;
+    background-color: #fff;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -2534,13 +2535,20 @@ table img {
 }
 
 .banner_cont {
+    position: absolute;
+    top: 15%;
     margin-left: 5% !important;
+    z-index: 9999;
+}
+
+.banner_cont p {
+    margin-left: 20px;
 }
 
 .banner .title {
     font-family: "Raleway", sans-serif;
     font-size: 62px;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 80px;
     /* font-family: "Catamaran", sans-serif; */
     margin-bottom: 20px;
@@ -2548,8 +2556,8 @@ table img {
 
 .banner .subtitle {
     color: #848486;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 200;
     margin-bottom: 25px;
 }
 
@@ -6120,4 +6128,27 @@ footer.ct-footer.footer-3 {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+.paragraph-rows {
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+h1.title {
+    margin: 146px 0px 50px 20px;
+    color: #483627;
+    font-size: 62px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.region_text p {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    color: #7f7c6e;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.8px;
 }
