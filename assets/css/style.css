@@ -3476,6 +3476,10 @@ table img {
     display: block;
 }
 
+.modal-post_imge {
+    display: block;
+}
+
 .post .post-thumbnail img {
     width: 100%;
     border-radius: 8px;
