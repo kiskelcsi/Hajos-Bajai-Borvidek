@@ -374,8 +374,8 @@ function handleButtonClicked(event) {
   }' alt='${description}' />
 </div>
  
-  <p class="col-12 col-md-6 pbuttonbottom " >${hajos[description].str}</p>
-  <div class=" col-12 col-md-6 ptittlemargin">
+  <p class="col-12 col-md-8 pbuttonbottom " >${hajos[description].str}</p>
+  <div class=" col-12 col-md-4 ptittlemargin ">
   <h5>Elérhetőségek:</h5>
   <p>Cím: <br> ${hajos[description].adresse} </p>
   <a href="tel:${hajos[description].telefon}">${
@@ -383,7 +383,7 @@ function handleButtonClicked(event) {
   }</a><br>
   <a href="mailto:${hajos[description].email}">${hajos[description].email}</a>
   </div>
-  <div class="col-12 row" >
+  <div class="col-12 row " >
   <div class="col-12 col-md-6 justify-content-center d-flex" ><a class=" btn-custom primary justify-content-center" href="${
     hajos[description].page
   }">${hajos[description].winery}</a></div>

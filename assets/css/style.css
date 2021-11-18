@@ -2539,8 +2539,8 @@ table img {
 .banner_cont {
     position: absolute;
     top: 15%;
-    margin-left: 5% !important;
-    z-index: 9999;
+    padding-left: 5% !important;
+    z-index: 1;
 }
 
 .banner_cont p {
@@ -6021,12 +6021,12 @@ footer.ct-footer.footer-3 {
 }
 
 .pbuttonbottom {
-    padding: 40px 0;
+    padding: 40px 14px;
 }
 
 .ptittlemargin {
     margin-top: 40px;
-    padding-left: 82px;
+    padding-left: 147px;
 }
 
 .goBackModal {
