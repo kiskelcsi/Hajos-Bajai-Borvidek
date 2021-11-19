@@ -220,28 +220,28 @@ function handleButtonClicked(event) {
                 <div class="col-lg-6 col-md-6 grid-item  cards">
                     <article class="post sigma_featured-product">
                         <div class="post-thumbnail card" data-description="1">
-                            <a href="#"><img src="${hajos[description].image1}" alt="blog post" /></a>
+                            <a href="#"><img class="lazyload" src="${hajos[description].image1}" alt="blog post" /></a>
                         </div>
                     </article>
                 </div>
                 <div class="col-lg-6 col-md-6 grid-item  cards">
                     <article class="post sigma_featured-product">
                         <div class="post-thumbnail card" data-description="2">
-                            <a href="#"><img src="${hajos[description].image2}" alt="blog post" /></a>
+                            <a href="#"><img class="lazyload" src="${hajos[description].image2}" alt="blog post" /></a>
                         </div>
                     </article>
                 </div>
                 <div class="col-lg-6 col-md-6 grid-item  cards">
                     <article class="post sigma_featured-product">
                         <div class="post-thumbnail card" data-description="3">
-                            <a href="#"><img src="${hajos[description].image3}" alt="blog post" /></a>
+                            <a href="#"><img class="lazyload" src="${hajos[description].image3}" alt="blog post" /></a>
                         </div>
                     </article>
                 </div>
                 <div class="col-lg-6 col-md-6 grid-item  cards">
                     <article class="post sigma_featured-product">
                         <div class="post-thumbnail card" data-description="4">
-                            <a href="#"><img src="${hajos[description].image4}" alt="blog post" /></a>
+                            <a href="#"><img class="lazyload" src="${hajos[description].image4}" alt="blog post" /></a>
                         </div>
                     </article>
                 </div>
@@ -281,6 +281,7 @@ function handleButtonClicked(event) {
   $grid.imagesLoaded(function () {
     $grid.isotope();
   });
+  $("img.lazyload").lazyload();
 }
 
 function closeModal(e) {
