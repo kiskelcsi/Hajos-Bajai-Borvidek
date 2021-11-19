@@ -6173,11 +6173,11 @@ h1.title {
 }
 
 .pright_region {
-    padding-right: 100px;
+    padding: 0 20px;
 }
 
 .pleft_region {
-    padding-left: 100px;
+    padding-left: 0 20px;
 }
 
 .strong_text {
@@ -6202,6 +6202,15 @@ h1.title {
     .title-underline {
         font-size: 36px;
         line-height: 40px;
+    }
+}
+
+@media (min-width: 600px) {
+    .pright_region {
+        padding-right: 100px;
+    }
+    .pleft_region {
+        padding-left: 100px;
     }
 }
 
