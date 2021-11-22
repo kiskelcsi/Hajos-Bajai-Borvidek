@@ -6152,15 +6152,18 @@ h1.title {
     font-size: 62px;
     line-height: 70px;
     font-weight: 400;
+    border-bottom: 3px solid #483627;
+    width: fit-content;
 }
 
-.title-underline:after {
+
+/* .title-underline:after {
     content: " ";
     display: block;
     border-bottom: 10px double #b5c3d5;
     margin-top: 10px;
     width: 160px;
-}
+} */
 
 .region_text p {
     margin-top: 5px;
@@ -6193,7 +6196,7 @@ h1.title {
 .strong_text-eredet::after {
     content: " ";
     display: block;
-    border-bottom: 3px solid #b5c3d5;
+    border-bottom: 3px solid #7f7c6e;
     margin-top: 10px;
     width: 60px;
 }

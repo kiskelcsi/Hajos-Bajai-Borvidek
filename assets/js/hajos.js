@@ -137,7 +137,7 @@ const hajos = [
     page: "https://hajosbaja.hu/",
   },
   {
-    winery: "Matos Pince",
+    winery: "Schön Pince",
     image1: "image/Schön/schon1.jpg",
     image2: "image/Schön/schon2.jpg",
     image3: "image/Schön/schon3.jpg",
@@ -162,10 +162,10 @@ const hajos = [
   },
   {
     winery: "Sziegl Pince",
-    image1: "image/Sziegl/sziegl2.jpg",
-    image2: "image/Sziegl/sziegl3.jpg",
+    image1: "image/Sziegl/sziegl1.jpg",
+    image2: "image/Sziegl/sziegl2.jpg",
     image3: "image/Sziegl/sziegl4.jpg",
-    image4: "image/Sziegl/sziegl5.jpg",
+    image4: "image/Sziegl/sziegl3.jpg",
     adresse: "1234, Hajos-Baja <br> Szőlő utca 7.",
     telefon: "+36/30-123-4567",
     email: "hajosbaja@gmail.com",
