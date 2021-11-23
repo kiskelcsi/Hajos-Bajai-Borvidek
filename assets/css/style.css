@@ -764,13 +764,14 @@ p {
     color: #515151;
 }
 
-a {
+
+/* a {
     color: #48132a;
     text-decoration: none;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
-}
+} */
 
 a:hover,
 a:focus {
@@ -923,6 +924,7 @@ blockquote p {
 }
 
 .section-title-wrap.section-header {
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -1421,9 +1423,10 @@ table img {
     margin-top: 20px;
 }
 
-.nav-item {
+
+/* .nav-item {
     margin: 0;
-}
+} */
 
 .nav-link {
     padding: 10px 20px;
@@ -2256,11 +2259,7 @@ table img {
 
 .ct-footer a,
 .ct-footer i {
-    color: #515151;
-}
-
-.ct-footer a:hover {
-    color: #48132a;
+    color: #fff;
 }
 
 .footer-widget {
@@ -3583,8 +3582,25 @@ table img {
     font-size: 13px;
 }
 
-.post-categories a:hover {
+
+/* .post-categories a:hover {
     background-color: #a63b43;
+    color: #fff;
+} */
+
+.post-events a {
+    display: inline-block;
+    padding: 2px 12px;
+    color: #ffffff;
+    background-color: #4267b2;
+    border-radius: 8px;
+    font-weight: 600;
+    margin: 0 2px 5px 0;
+    font-size: 12px;
+}
+
+.post-events a:hover {
+    background-color: #adb9d3;
     color: #fff;
 }
 
@@ -6156,6 +6172,15 @@ h1.title {
     width: fit-content;
 }
 
+.sub-underline {
+    margin: 50px 0px 70px 20px;
+    color: #483627;
+    line-height: 40px;
+    font-weight: 400;
+    border-bottom: 2px solid #483627;
+    width: fit-content;
+}
+
 
 /* .title-underline:after {
     content: " ";
@@ -6222,4 +6247,69 @@ h1.title {
     width: 100%;
     min-height: 1px;
     max-height: max-content;
+}
+
+
+/************************************* * EXPAND DOWN */
+
+.ladda-button.expand-down {
+    overflow: hidden;
+}
+
+.ladda-button.expand-down .spinner {
+    top: 3.3em;
+    left: 50%;
+    margin-left: -16px;
+}
+
+.ladda-button.expand-down[data-loading] {
+    padding-bottom: 3em;
+}
+
+.ladda-button.expand-down[data-loading] .spinner {
+    opacity: 1;
+}
+
+.dropdown-menu {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.567);
+    font-size: 16px;
+    min-width: max-content;
+    animation-name: slidenavAnimation;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: slidenavAnimation;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: slidenavAnimation;
+    -moz-animation-duration: 0.4s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease;
+    -moz-animation-fill-mode: forwards;
+}
+
+.dropdown-menu a {
+    padding: 0 20px;
+}
+
+@keyframes slidenavAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slidenavAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
