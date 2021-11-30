@@ -724,7 +724,7 @@ h6 {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     line-height: 28px;
-    color: #1d2228;
+    color: #7f7c6e;
 }
 
 h1 {
@@ -921,6 +921,24 @@ blockquote p {
     font-size: 42px;
     margin-bottom: 60px;
     padding-left: 0 !important;
+}
+
+.title_programs {
+    position: absolute;
+    top: 55%;
+    font-size: 42px;
+    margin-bottom: 60px;
+    padding-left: 0 !important;
+    font-weight: 200;
+}
+
+.title_programs-pic {
+    position: relative;
+    font-weight: 300;
+    left: 75vw;
+    top: 73vh;
+    font-style: italic;
+    text-shadow: 3px 3px 6px black;
 }
 
 .section-title-wrap.section-header {
@@ -6156,7 +6174,7 @@ footer.ct-footer.footer-3 {
 
 h1.title {
     margin: 146px 0px 50px 20px;
-    color: #483627;
+    color: #7f7c6e;
     font-size: 62px;
     line-height: 70px;
     font-weight: 400;
@@ -6164,20 +6182,20 @@ h1.title {
 
 .title-underline {
     margin: 146px 0px 50px 20px;
-    color: #483627;
+    color: #7f7c6e;
     font-size: 62px;
     line-height: 70px;
     font-weight: 400;
-    border-bottom: 3px solid #483627;
+    border-bottom: 3px solid #7f7c6e;
     width: fit-content;
 }
 
 .sub-underline {
     margin: 50px 0px 70px 20px;
-    color: #483627;
+    color: #7f7c6e;
     line-height: 40px;
     font-weight: 400;
-    border-bottom: 2px solid #483627;
+    border-bottom: 2px solid #7f7c6e;
     width: fit-content;
 }
 
