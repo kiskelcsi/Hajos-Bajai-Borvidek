@@ -95,7 +95,7 @@ const hajos = [{
         adresse: "1234, Hajos-Baja <br> Szőlő utca 7.",
         telefon: "+36/30-123-4567",
         email: "hajosbaja@gmail.com",
-        str1: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
+        str1: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
         str2: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
         str3: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
         str4: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
@@ -271,17 +271,18 @@ function handleButtonClicked(event) {
                         </div>
                     </article>
                 </div>
+
                 <div class="col-lg-6 col-md-6 grid-item  cards">
                     <article class="post sigma_featured-product">
-                        <div class="post-thumbnail card" >
-                        <p class="col-12 col-md-8 pbuttonbottom ">${hajos[description].str2}</p>
+                        <div class="post-thumbnail card" data-description="2">
+                            <a href="#"><img class="lazyload jsimages" src="${hajos[description].image2}" alt="blog post" /></a>
                         </div>
                     </article>
                 </div>
                 <div class="col-lg-6 col-md-6 grid-item  cards">
                     <article class="post sigma_featured-product">
-                        <div class="post-thumbnail card" data-description="2">
-                            <a href="#"><img class="lazyload jsimages" src="${hajos[description].image2}" alt="blog post" /></a>
+                        <div class="post-thumbnail card" >
+                        <p class="col-12 col-md-8 pbuttonbottom ">${hajos[description].str2}</p>
                         </div>
                     </article>
                 </div>
@@ -299,13 +300,7 @@ function handleButtonClicked(event) {
                     </div>
                 </article>
             </div>
-            <div class="col-lg-6 col-md-6 grid-item  cards">
-                <article class="post sigma_featured-product">
-                    <div class="post-thumbnail card" >
-                    <p class="col-12 col-md-8 pbuttonbottom ">${hajos[description].str2}</p>
-                    </div>
-                </article>
-            </div>
+
 
                 <div class="col-lg-6 col-md-6 grid-item  cards">
                     <article class="post sigma_featured-product">
@@ -314,6 +309,13 @@ function handleButtonClicked(event) {
                         </div>
                     </article>
                 </div>
+                <div class="col-lg-6 col-md-6 grid-item  cards">
+                <article class="post sigma_featured-product">
+                    <div class="post-thumbnail card" >
+                    <p class="col-12 col-md-8 pbuttonbottom ">${hajos[description].str2}</p>
+                    </div>
+                </article>
+            </div>
                 <div class="col-lg-12 col-md-12 grid-item  cards">
                     <article class="post sigma_featured-product">
                         <div class="post-thumbnail card pbuttonbottom" >
