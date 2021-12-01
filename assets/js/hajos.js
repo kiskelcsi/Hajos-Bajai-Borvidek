@@ -15,16 +15,16 @@ const hajos = [{
         image2: "image/huber/huber2.jpg",
         image3: "image/huber/huber3.jpg",
         image4: "image/huber/huber4.jpg",
-        adresse: "6344, Hajós <br> Csárda sor 7.",
-        telefon: "+36/70-330-6870",
+        adresse: "6344, Hajós Pincefalu<br> Csárda sor 7.",
+        telefon: "+36703306870",
         email: "info@huberpince.hu",
 
-        str1: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
-        str2: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
-        str3: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
-        str4: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
+        str1: "A nagypapa pincéje 1977-ben épült a Présház utcában, Huber János pedig 2008-ban készítette el első saját borát és kezdett el a családi pincében dolgozni. János 2,5 hektár területen dolgozik és évente 8-10.000 palack bort készít.",
+        str2: "A papa pincéjét kinőve több pincét is vásárolt a Csárda soron, így jelenleg négy egymás melletti pince áll a rendelkezésére szőlőfeldolgozáshoz, borkészítéshez és a vendégek fogadásához.",
+        str3: "Termesztett fajtái az Olaszrizling, Zöld veltelini, Cserszegi fűszeres, Zweigelt, Kékfrankos, Cabernet sauvignon és Merlot.",
+        str4: "2021-ben János húga úgy döntött, hogy párjával hazatérnek a családi vállalkozásba külföldi tapasztalatszerzéseik után és segítik testvérét. Azóta Huber János borász mellett Huber Anikó és Pogacsics Krisztián várják a vendégeket és foglalkoznak a gasztronómiával.",
 
-        page: "https://huberpince.hu/",
+        page: "huberpince.hu/",
     },
     {
         winery: "Oszvald Pince",
@@ -257,65 +257,55 @@ function handleButtonClicked(event) {
         <h2>${hajos[description].winery}</h2>
 
             <div class="row grid ">
-                <div class="col-lg-6 col-md-6 grid-item  cards">
-                    <article class="post sigma_featured-product">
+                <div class="col-lg-12 col-md-12 grid-item row cards">
+                    <article class="post col-12 col-md-6 sigma_featured-product">
                         <div class="post-thumbnail card" data-description="1">
                             <a href="#"><img class="lazyload jsimages" src="${hajos[description].image1}" alt="blog post" /></a>
                         </div>
                     </article>
-                </div>
-                <div class="col-lg-6 col-md-6 grid-item  cards">
-                    <article class="post sigma_featured-product">
+                    <article class="col-12 col-md-6 post sigma_featured-product">
                         <div class="post-thumbnail card" >
-                        <p class="col-12 col-md-8 pbuttonbottom ">${hajos[description].str1}</p>
+                        <p class=" pbuttonbottom ">${hajos[description].str1}</p>
                         </div>
                     </article>
                 </div>
 
-                <div class="col-lg-6 col-md-6 grid-item  cards">
-                    <article class="post sigma_featured-product">
+                <div class="col-lg-12 col-md-12 grid-item row cards">
+                <article class="post col-12 col-md-6 sigma_featured-product">
+                        <div class="post-thumbnail card" >
+                        <p class=" pbuttonbottom ">${hajos[description].str2}</p>
+                        </div>
+                    </article>
+                    <article class="post col-12 col-md-6 sigma_featured-product">
                         <div class="post-thumbnail card" data-description="2">
                             <a href="#"><img class="lazyload jsimages" src="${hajos[description].image2}" alt="blog post" /></a>
                         </div>
                     </article>
                 </div>
-                <div class="col-lg-6 col-md-6 grid-item  cards">
-                    <article class="post sigma_featured-product">
-                        <div class="post-thumbnail card" >
-                        <p class="col-12 col-md-8 pbuttonbottom ">${hajos[description].str2}</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-6 col-md-6 grid-item  cards">
-                    <article class="post sigma_featured-product">
+                <div class="col-lg-12 col-md-12 grid-item row  cards">
+                    <article class="post col-12 col-md-6 sigma_featured-product">
                         <div class="post-thumbnail card" data-description="3">
                             <a href="#"><img class="lazyload jsimages" src="${hajos[description].image3}" alt="blog post" /></a>
                         </div>
                     </article>
-                </div>
-                <div class="col-lg-6 col-md-6 grid-item  cards">
-                <article class="post sigma_featured-product">
+                    <article class="post col-12 col-md-6 sigma_featured-product">
                     <div class="post-thumbnail card" >
-                    <p class="col-12 col-md-8 pbuttonbottom ">${hajos[description].str1}</p>
+                    <p class=" pbuttonbottom ">${hajos[description].str3}</p>
                     </div>
                 </article>
-            </div>
-
-
-                <div class="col-lg-6 col-md-6 grid-item  cards">
-                    <article class="post sigma_featured-product">
+                </div>
+                <div class="col-lg-12 col-md-12 grid-item row cards">
+                <article class="post col-12 col-md-6 sigma_featured-product">
+                    <div class="post-thumbnail card" >
+                    <p class=" pbuttonbottom ">${hajos[description].str4}</p>
+                    </div>
+                </article>
+                    <article class="post col-12 col-md-6 sigma_featured-product">
                         <div class="post-thumbnail card" data-description="4">
                             <a href="#"><img class="lazyload jsimages" src="${hajos[description].image4}" alt="blog post" /></a>
                         </div>
                     </article>
                 </div>
-                <div class="col-lg-6 col-md-6 grid-item  cards">
-                <article class="post sigma_featured-product">
-                    <div class="post-thumbnail card" >
-                    <p class="col-12 col-md-8 pbuttonbottom ">${hajos[description].str2}</p>
-                    </div>
-                </article>
-            </div>
                 <div class="col-lg-12 col-md-12 grid-item  cards">
                     <article class="post sigma_featured-product">
                         <div class="post-thumbnail card pbuttonbottom" >
