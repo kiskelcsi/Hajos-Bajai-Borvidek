@@ -5931,6 +5931,7 @@ footer.ct-footer.footer-3 {
 
 .modal_outer .card {
     border: none !important;
+    height: 100%;
 }
 
 .modal_outer {
@@ -5979,8 +5980,9 @@ footer.ct-footer.footer-3 {
 }
 
 .pbuttonbottom {
+    margin: auto;
     padding: 40px 14px;
-    margin: 0 auto;
+    text-align: justify;
 }
 
 .pbuttonbottom h5 {

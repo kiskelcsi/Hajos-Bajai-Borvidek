@@ -15,7 +15,7 @@ const hajos = [{
         image2: "image/huber/huber2.jpg",
         image3: "image/huber/huber3.jpg",
         image4: "image/huber/huber4.jpg",
-        adresse: "6344, Hajós Pincefalu<br> Csárda sor 7.",
+        adresse: "6344, Hajós Pincefalu Csárda sor 7.",
         telefon: "+36703306870",
         email: "info@huberpince.hu",
 
@@ -310,9 +310,9 @@ function handleButtonClicked(event) {
                     <article class="post sigma_featured-product">
                         <div class="post-thumbnail card pbuttonbottom" >
                         <h5>Elérhetőségek:</h5>
-                        <p>Cím: <br> ${hajos[description].adresse} </p>
-                        <a href="tel:${hajos[description].telefon}">${hajos[description].telefon}</a><br>
-                        <a href="mailto:${hajos[description].email}">${hajos[description].email}</a>                        </div>
+                        <p>Cím: ${hajos[description].adresse} </p>
+                        <a href="tel:${hajos[description].telefon}">Telefon: ${hajos[description].telefon}</a>
+                        <a href="mailto:${hajos[description].email}">E-mail: ${hajos[description].email}</a>                        </div>
                     </article>
                 </div>
             </div>
