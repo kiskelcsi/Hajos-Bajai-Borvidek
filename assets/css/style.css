@@ -713,7 +713,7 @@ img {
     background-position: center;
     background-size: cover;
     max-width: 100vw;
-    height: 55vh;
+    height: 100vh;
 }
 
 
@@ -1111,14 +1111,13 @@ textarea {
     -webkit-box-shadow: 4px 3px 24px rgba(133, 183, 44, 0.5);
     box-shadow: 4px 3px 24px rgba(133, 183, 44, 0.5);
     max-width: 200px;
-    margin-top: 30px;
 }
 
 .btn-custom::before {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #412000;
+    background-color: #58564c;
     position: absolute;
     top: 0;
     left: 0;
@@ -1149,19 +1148,19 @@ textarea {
 }
 
 .btn-custom.primary {
-    background-color: #964b00;
-    -webkit-box-shadow: 4px 3px 24px #412000;
-    box-shadow: 4px 3px 24px #412000;
+    background-color: #7f7c6e;
+    -webkit-box-shadow: 4px 3px 24px #58564c;
+    box-shadow: 4px 3px 24px #58564c;
 }
 
 .btn-custom.secondary {
-    background-color: #964b00;
-    -webkit-box-shadow: 0 3px 24px #412000;
-    box-shadow: 0 3px 24px #412000;
+    background-color: #7f7c6e;
+    -webkit-box-shadow: 0 3px 24px #58564c;
+    box-shadow: 0 3px 24px #58564c;
 }
 
 .btn-custom.secondary::before {
-    background-color: #964b00;
+    background-color: #7f7c6e;
 }
 
 .input-group-append .btn-custom,
@@ -2693,7 +2692,7 @@ table img {
 
 .subheader .subheader-inner {
     padding-bottom: 40px;
-    border-bottom: 4px double #fff;
+    /* border-bottom: 4px double #fff; */
     text-align: center;
 }
 
@@ -2705,9 +2704,11 @@ table img {
 
 .subheader h1 {
     color: #fff;
-    font-family: "Raleway", sans-serif;
+    /* font-family: "Raleway", sans-serif; */
     text-align: center;
-    font-weight: 400;
+    font-weight: 200;
+    font-size: 62px;
+    line-height: 80px;
 }
 
 .subheader_contact h1 {
@@ -3535,6 +3536,10 @@ table img {
 
 .post .post-body {
     margin: 10px 0 0;
+}
+
+.post .post-body_news {
+    padding: 20px;
 }
 
 .post .post-body .post-title {
@@ -6299,4 +6304,58 @@ h1.title {
     to {
         opacity: 1;
     }
+}
+
+.modal-footer {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.modal-footer> :not(:first-child) {
+    margin-left: 0.25rem;
+}
+
+.modal-footer> :not(:last-child) {
+    margin-right: 0.25rem;
+}
+
+.sticky {
+    position: sticky;
+    bottom: -32px;
+    width: 100%;
+}
+
+.post-text_news {
+    margin-bottom: 70px;
+}
+
+.post_news {
+    border: 1px solid #7f7c6e41;
+    border-radius: 8px;
+}
+
+.post-cat_news {
+    padding: 0 20px;
+}
+
+.news_thumbnail {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.post .news-thumb:hover img {
+    -webkit-transform: scale(1) translateX(0) rotate(0deg);
+    -ms-transform: scale(1) translateX(0) rotate(0deg);
+    transform: scale(1) translateX(0) rotate(0deg);
 }
